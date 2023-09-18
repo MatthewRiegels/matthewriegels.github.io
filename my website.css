@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(238, 205, 255);
+  font-family: "comic sans ms";
+}
+  
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  color:rgb(61, 139, 87);
+  text-align: center;
+}
+
+h3 {
+  color:rgb(31, 185, 185);
+}
+
+p {
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+.center{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border-color: brown;
+  border-style: dashed dashed;
+  border-width: 20px;
+}
+
+.centre{
+  margin: auto;
+  width: 10%;
+  text-align: center;
+  border-color: aqua;
+  border-style: dashed;
+  border-width: 10px;
+}
+
+.recursion-container{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.recursion-iframe-1{
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+}
+
+.recursion-iframe-2{
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+}
