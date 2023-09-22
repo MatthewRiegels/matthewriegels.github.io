@@ -23,7 +23,29 @@
                 var number3 = parseInt(document.getElementById("number3").value);
                 var number4 = parseInt(document.getElementById("number4").value);
                 var totalMark = number1 + number2 + number3 + number4;
-                document.getElementById("grades").innerHTML = toString(additionResult);
+                document.getElementById("grades").innerHTML = toString(totalMark);
+
+                switch (totalMark) {
+                    case 0:
+                        grade="U"
+                    case 4:
+                        grade="G"
+                    case 13:
+                        grade="F"
+                    case 22:
+                        grade="E"
+                    case 31:
+                        grade="D"
+                    case 41:
+                        grade="C"
+                    case 54:
+                        grade="B"
+                    case 67:
+                        grade="A"
+                    case 80:
+                        grade="A*"
+                
+                document.getElementById("grades").innerHTML = grade
             }
         </script>
     </body>
