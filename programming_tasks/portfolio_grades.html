@@ -24,7 +24,7 @@
                 var number4 = parseInt(document.getElementById("number4").value);
                 var totalMark = number1 + number2 + number3 + number4;
 
-                grade="X";
+                grade="mark exceeded 100";
                 switch (totalMark) {
                     case 0:
                     case 1:
@@ -155,7 +155,7 @@
                         break;
                 }
                 
-                document.getElementById("grades").innerHTML = grade
+                document.getElementById("grades").innerHTML = "grade"+grade
             }
         </script>
     </body>
