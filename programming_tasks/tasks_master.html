@@ -10,15 +10,17 @@
     <body>
         <h1>Programming tasks:</h1>
             <h2><a href="../index.html">back to main page</a></h2>
-            <h2><a href="simple_adder.html">Simple Adder</a></h2>
             <h2><a href="5_on_a_die.html">5 on a die</a></h2>
+            <h2><a href="simple_adder.html">Simple Adder</a></h2>
             <h2><a href="portfolio_grades.html">Portfolio Grades</a></h2>
         
         <button onclick="ShowTask('5_on_a_die.html')">5 on a die</button>
-        <div id="task_frame"></div>
+        <button onclick="ShowTask('simple_adder.html')">simple adder</button>
+        <button onclick="ShowTask('portfolio_grades.html')">portfolio grades</button>
+        <div width="100%", height="100%", id="task_frame"></div>
         <script>
             function ShowTask(file){
-                document.getElementById("task_frame").innerHTML = "<iframe src='"+file+"'></iframe>";
+                document.getElementById("task_frame").innerHTML = "<iframe width='100%', height='100%', src='"+file+"'></iframe>";
             }
         </script>
     </body>
