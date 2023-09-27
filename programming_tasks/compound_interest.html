@@ -21,7 +21,7 @@
                 rate = parseFloat(document.GetElementById("interestRate"));
                 rate = 1 + (rate / 100)
                 for (var balance = parseFloat(document.GetElementById("startBalance")); balance < maxBalance; balance *= rate) {
-                    document.GetElementById("thingResult").innerHTML += String(balance)
+                    document.GetElementById("thingResult").innerHTML += "<br>"+String(balance)
                 }
             }
         </script>
