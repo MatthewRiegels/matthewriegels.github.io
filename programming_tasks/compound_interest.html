@@ -17,9 +17,9 @@
 
         <script>
             function doThing() {
-                maxBalance = parseFloat(document.getElementById("desiredBalance"));
-                rate = parseFloat(document.getElementById("interestRate"));
-                rate = 1 + (rate / 100)
+                var maxBalance = parseFloat(document.getElementById("desiredBalance"));
+                var rate = parseFloat(document.getElementById("interestRate"));
+                var rate = 1 + (rate / 100)
                 for (var balance = parseFloat(document.getElementById("startBalance")); balance < maxBalance; balance *= rate) {
                     document.getElementById("thingResult").innerHTML += "<br>"+String(balance)
                 }
