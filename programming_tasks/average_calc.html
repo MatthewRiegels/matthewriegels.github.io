@@ -5,14 +5,14 @@
         <link rel="stylesheet" href="../my website.css">
     </head>
     <body>
-        <h3>Avergae Calculator</h3>
+        <h3>Average Calculator</h3>
         <button onclick="calculateAverage()">do thing</button>
         <div id="calcResult"></div>
         <script>
             function calculateAverage() {
                 numNums = prompt("How many numbers to average?", "");
                 total = 0;
-                if (!NaN(numNums)) {
+                if (!isNaN(numNums)) {
                     for (var i = 0; i < numNums; i++) {
                         total += prompt("number "+(i+1).toString(), "");
                     }
