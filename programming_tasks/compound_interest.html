@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Compound Interest</title>
+        <link rel="stylesheet" href="../my website.css">
+    </head>
+    <body>
+        <h3>Compound Interest</h3>
+        
+        <p><label>Current Balance <input id="startBalance">£</label></p>
+        <p><label>Interest Rate <input id="interestRate">%</label></p>
+        <p><label>Desired Balance <input id="desiredBalance">£</label></p>
+
+        <button onclick="doThing()">do thing</button>
+
+        <div id="thingResult"></div>
+
+        <script>
+            function doThing() {
+                maxBalance = parseFloat(Document.GetElementById("desiredBalance"));
+                rate = parseFloat(Document.GetElementById("interestRate"));
+                rate = 1 + (rate / 100)
+                for (var balance = parseFloat(Document.GetElementById("startBalance")); balance < maxBalance; balance *= rate) {
+                    console.log(balance);
+                }
+            }
+        </script>
+    </body>
+</html>
