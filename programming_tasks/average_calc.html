@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Average Calculator</title>
+        <link rel="stylesheet" href="../my website.css">
+    </head>
+    <body>
+        <h3>Avergae Calculator</h3>
+        <button onclick="calculateAverage()">do thing</button>
+        <div id="calcResult"></div>
+        <script>
+            function calculateAverage() {
+                numNums = prompt("How many numbers to average?", "");
+                total = 0;
+                if (!NaN(numNums)) {
+                    for (var i = 0; i < numNums; i++) {
+                        total += prompt("number "+(i+1).toString(), "");
+                    }
+                }
+                let avg = total / numNums;
+                document.getElementById("calcResult").innerHTML = "total: " + total.toString() + ", avg: " + avg.toString();
+            }
+        </script>
+    </body>
+</html>
