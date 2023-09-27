@@ -17,11 +17,13 @@
 
         <script>
             function doThing() {
+                var balance = parseFloat(document.getElementById("startBalance"))
                 var maxBalance = parseFloat(document.getElementById("desiredBalance"));
                 var rate = parseFloat(document.getElementById("interestRate"));
                 var rate = 1 + (rate / 100)
-                for (var balance = parseFloat(document.getElementById("startBalance")); balance < maxBalance; balance *= rate) {
-                    document.getElementById("thingResult").innerHTML += "<br>"+String(balance)
+                for (var i = 0; balance < maxBalance; i++) {
+                    document.getElementById("thingResult").innerHTML += "<br>year " + String(i) + ": " + String(balance)
+                    balance *= rate
                 }
             }
         </script>
