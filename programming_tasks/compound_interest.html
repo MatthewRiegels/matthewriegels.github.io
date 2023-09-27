@@ -17,11 +17,11 @@
 
         <script>
             function doThing() {
-                maxBalance = parseFloat(Document.GetElementById("desiredBalance"));
-                rate = parseFloat(Document.GetElementById("interestRate"));
+                maxBalance = parseFloat(document.GetElementById("desiredBalance"));
+                rate = parseFloat(document.GetElementById("interestRate"));
                 rate = 1 + (rate / 100)
-                for (var balance = parseFloat(Document.GetElementById("startBalance")); balance < maxBalance; balance *= rate) {
-                    console.log(balance);
+                for (var balance = parseFloat(document.GetElementById("startBalance")); balance < maxBalance; balance *= rate) {
+                    document.GetElementById("thingResult").innerHTML += String(balance)
                 }
             }
         </script>
