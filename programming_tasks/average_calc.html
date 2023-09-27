@@ -14,7 +14,10 @@
                 total = 0;
                 if (!isNaN(numNums)) {
                     for (var i = 0; i < numNums; i++) {
-                        total += prompt("number "+(i+1).toString(), "");
+                        value = parseInt(prompt("number " + (i + 1).toString(), ""));
+                        if (!isNaN(value)){
+                        total += value;
+                        }
                     }
                 }
                 let avg = total / numNums;
