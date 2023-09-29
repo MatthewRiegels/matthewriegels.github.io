@@ -17,9 +17,9 @@
 
         <script>
             function doThing() {
-                var balance = parseFloat(document.getElementById("startBalance"));
-                var maxBalance = parseFloat(document.getElementById("desiredBalance"));
-                var rate = parseFloat(document.getElementById("interestRate"));
+                var balance = parseFloat(document.getElementById("startBalance").value);
+                var maxBalance = parseFloat(document.getElementById("desiredBalance").value);
+                var rate = parseFloat(document.getElementById("interestRate").value);
                 rate = 1 + (rate / 100);
                 var yearCount = 1;
                 while (balance < maxBalance) {
@@ -27,6 +27,7 @@
                     balance *= rate;
                     yearCount++;
                 }
+                document.getElementById("thingResult").innerHTML += "<br>year " + String(yearCount) + ": " + String(balance);
             }
         </script>
     </body>
