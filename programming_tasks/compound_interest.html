@@ -20,8 +20,8 @@
                 var balance = parseFloat(document.getElementById("startBalance"))
                 var maxBalance = parseFloat(document.getElementById("desiredBalance"));
                 var rate = parseFloat(document.getElementById("interestRate"));
-                var rate = 1 + (rate / 100)
-                for (var i = 0; balance < maxBalance; i++) {
+                rate = 1 + (rate / 100)
+                while (balance < maxBalance) {
                     document.getElementById("thingResult").innerHTML += "<br>year " + String(i) + ": " + String(balance)
                     balance *= rate
                 }
