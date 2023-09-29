@@ -10,14 +10,12 @@
         <div id="calcResult"></div>
         <script>
             function calculateAverage() {
-                var numNums = prompt("How many numbers to average?", "");
+                var numNums = parseInt(prompt("How many numbers to average?", ""));
                 var total = 0;
-                if (!isNaN(numNums)) {
-                    for (var i = 0; i < numNums; i++) {
-                        var value = parseInt(prompt("number " + (i + 1).toString(), ""));
-                        if (!isNaN(value)){
-                        total += value;
-                        }
+                for (var i = 0; i < numNums; i++) {
+                    var value = parseInt(prompt("number " + (i + 1).toString(), ""));
+                    if (!isNaN(value)){
+                    total += value;
                     }
                 }
                 var avg = total / numNums;
