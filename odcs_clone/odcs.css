@@ -1,0 +1,33 @@
+.red-text {
+    color: #b41d2f;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.navbar-custom {
+    background-color: #8f212e;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.bg-red {
+    background-color: #b42233ec;
+    color: #ffffff;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+}
